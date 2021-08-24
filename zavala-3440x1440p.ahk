@@ -33,17 +33,21 @@ Loop
 	MouseMove, tokensX, tokensY
 	Sleep, 250
 	;# this loop is doing half the count, so 100 to do 50 engrams
-	Loop, 100
+	Loop, 50
 	{
 		;# first 10
-		Click, tokensX, tokensY
+		MouseMove, tokensX, tokensY
 		Sleep, 250
+		Click, tokensX, tokensY
+		Sleep, 1000
 
 		;# second 10
 		Click, tokensX, tokensY
 		Sleep, 1000
 
 		;# engram
+		MouseMove, engramX, engramY
+		Sleep, 250
 		Click, engramX, engramY
 		Sleep, 1500
 	}

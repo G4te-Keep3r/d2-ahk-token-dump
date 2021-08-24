@@ -5,7 +5,9 @@ AutoHotKey files to automate turning in tokens and then dismantling the gear you
 
 -----------------
 
-It turns in 2k tokens and opens those engrams, then dismantles what you got to generate glimmer/shards. This repeats until you stop it. I don't think it would do anything bad if you left it running after you run out of tokens, but not positive, so you have been warned.
+It turns in 1,000 tokens and opens those engrams, then dismantles what you got to generate glimmer/shards. This repeats until you stop it. I don't think it would do anything bad if you left it running after you run out of tokens, but not positive, so you have been warned.
+
+Example of 1 loop can be seen here at 1000% speed https://youtu.be/lQ1RVkgn_0A
 
 -----------------
 
@@ -31,8 +33,13 @@ Setup process:
 Requirements for all options:
 1) Ensure your inventory is empty except your equipped weapons and armor. You can leave ghosts/ships/sparrows, just make sure your kinetic/energy/power/helmet/arms/chest/boots/class are empty. To be safe, make sure postmaster is emtpy to
 2) Interact with zavala, when at his normal interface to where you could turn in tokens, hit control j
-3) Don't move your mouse until the script it finishes (~33 minutes per 10k tokens). When you are out of tokens or done with turning them in, hit escape
+3) Don't move your mouse until the script it finishes (~6 minutes per 1,000 tokens). When you are out of tokens or done with turning them in, hit escape
 
 -----------------
 
 Esc = Kill all AHK script. Will need to reopen file.
+
+-----------------
+-----------------
+
+NOTE - the ratio between token turn in and dismantle count is what was correct for shaxx turn in. Erroring on the side of caution with more dismantle than turn in per loop here. You can adjust "Loop, 8" to how many items you want to dismantle per loop if you want to try to optimize this, but at your own risk of sending things to postmaster.
